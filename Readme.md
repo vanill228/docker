@@ -11,3 +11,5 @@ mysql -uroot -proot --port 33061 --host 127.0.0.1
 docker-compose up -d --scale mysql=3
 
 docker-compose up --build -d
+
+docker exec [container-name] php artisan migrate
